@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  shopping-platform:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres-db
+
+  postgres-db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: shopping_db
+    ports:
+      - "5432:5432"
