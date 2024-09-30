@@ -1,0 +1,14 @@
+discount-policies:
+  discountPolicies:
+    - type: "amount"
+      quantityThreshold: 10
+      discountAmount: 2.00
+    - type: "amount"
+      quantityThreshold: 100
+      discountAmount: 5.00
+    - type: "percentage"
+      quantityThreshold: 10
+      discountPercentage: 3.0
+    - type: "percentage"
+      quantityThreshold: 50
+      discountPercentage: 5.0
